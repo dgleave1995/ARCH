@@ -1,14 +1,17 @@
 <template>
+  <Heading
+    headingText="ARCH">
+  </Heading>
   <div style="max-width: 600px; margin: 2rem auto; font-family: sans-serif;">
-    <h1>Content Repurposer</h1>
+    <Heading
+      headingText="Enter Your Content Here!"></Heading>
 
     <!-- Input Text Area -->
-    <textarea
-      v-model="content"
+    <TextInput
       placeholder="Paste your content here..."
       rows="5"
-      style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"
-    ></textarea>
+      v-model="content"
+    />
 
     <!-- Platform Checkboxes -->
     <div style="margin-bottom: 1rem;">
@@ -51,8 +54,16 @@
 <script>
 import { ref } from "vue";
 import api from "./api/client.js";
+import Heading from "./components/Heading.vue"
+import TextInput from "./components/TextInput.vue";
 
 export default {
+
+  components:{
+    Heading,
+    TextInput
+  },
+
   setup() {
     const content = ref("");
     const platforms = ref([]);
