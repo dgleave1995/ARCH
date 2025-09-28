@@ -5,37 +5,45 @@
       :items="[
         { name: 'Dashboard', url: '/home' },
         { name: 'Analytics', url: '/analytics' },
-        { name: 'Settings', url: '/create-content' }
+        { name: 'Create Content', url: '/create-content' }
       ]"
     />
-
-    <div class="main-content">
-      <router-view />
-    </div>
+    <router-view /> 
   </div>
 </template>
 
 <script>
-import SideBar from './components/SideBar.vue';
+import SideBar from "./components/SideBar.vue";
 
 export default {
   components: {
-    SideBar
-  }
+    SideBar,
+  },
 };
 </script>
 
 <style scoped>
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
 .app-layout {
   position: fixed;
   top: 0;
   left: 0;
-  width: 220px; /* sidebar width */
+  width: fit-content;  /* fixed sidebar width */
   height: 100vh;
 }
 
 .main-content {
-  margin-left: 220px; /* push content past sidebar */
+  height: 100%;
+  margin-left: 220px;
   padding: 1rem;
+  text-align: left;
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 </style>
