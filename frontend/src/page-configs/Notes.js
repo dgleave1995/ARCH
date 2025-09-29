@@ -12,7 +12,7 @@ export default {
           },
         },
         {
-          component: "Notes",
+          component: "NotesWrapper",
           props: {
           },
         },

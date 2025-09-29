@@ -68,8 +68,7 @@ export default {
 /* Minimized box */
 .notes-box {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+
   background: #1e293b;
   padding: 10px 20px;
   border-radius: 8px;
