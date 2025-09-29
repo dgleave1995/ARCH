@@ -4,6 +4,7 @@ import PageRenderer from '../components/pages/PageRenderer.vue';
 import Analytics from '../page-configs/Analytics.js';
 import CreateContent from '../page-configs/CreateContent.js';
 import Home from '../page-configs/Home.js';
+import Notes from '../page-configs/Notes.js';
 
 const routes = [
   { path: '/', redirect: '/home' },
@@ -24,6 +25,12 @@ const routes = [
     name: 'CreateContent',
     component: PageRenderer,
     props: { pageConfig: CreateContent },
+  },
+  {
+    path: '/notes',
+    name: 'Notes',
+    component: PageRenderer,
+    props: { pageConfig: Notes },
   },
 ];
 

@@ -29,7 +29,7 @@ app.post("/repurpose", async (req, res) => {
 
       // ← This is where you choose the AI model
       const completion = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",  // <--- use cheaper GPT-3.5-turbo here
+        model: "gpt-5-nano",  // <--- use cheaper GPT-3.5-turbo here
         messages: [{ role: "user", content: prompt }],
         max_tokens: 150
       });

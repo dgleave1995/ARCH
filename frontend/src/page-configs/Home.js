@@ -2,13 +2,13 @@
 export default {
   sections: [
     {
-      title: "ARCH - Dashboard",
+      title: "ARCH",
       headingTag: "h2",
       elements: [
         {
           component: "Heading",
           props: {
-            headingText: "First Name",
+            headingText: "Dashboard",
           },
         },
       ],

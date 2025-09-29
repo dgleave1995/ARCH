@@ -5,7 +5,8 @@
       :items="[
         { name: 'Dashboard', url: '/home' },
         { name: 'Analytics', url: '/analytics' },
-        { name: 'Create Content', url: '/create-content' }
+        { name: 'Create Content', url: '/create-content' },
+        { name: 'Notes', url: '/notes' },
       ]"
     />
     <router-view /> 

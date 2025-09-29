@@ -2,10 +2,10 @@
 export default {
   sections: [
     {
-      title: "Analytics",
+      title: "ARCH",
       headingTag: "h2",
       elements: [
-        { component: "Heading", props: { headingText: "Analytics Overview" } },
+        { component: "Heading", props: { headingText: "Analytics" } },
       ],
     },
   ],
