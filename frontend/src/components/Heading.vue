@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag">{{ headingText }}</component>
+  <component class="heading-format" :is="tag">{{ headingText }}</component>
 </template>
 
 <script>
@@ -17,3 +17,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.heading-format {
+  text-align: left;
+  margin: 0 0 1rem 0; /* optional spacing */
+  width: 100%;        /* ensures full width for flow layout */
+}
+
+</style>

@@ -67,33 +67,29 @@ export default {
 <style scoped>
 /* Minimized box */
 .notes-box {
-  position: fixed;
-
+  position: relative;       /* was fixed before */
+  margin: 0;                /* remove bottom/right offsets */
   background: #1e293b;
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   cursor: pointer;
-  z-index: 1000;
-  width: 300px;
-  height: 200px;
+  flex: 0 0 200px;          /* makes flex layout work */
+  min-width: 150px;
 }
 
-/* Centered overlay */
 .notes-overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;       /* relative to parent wrapper for maximized note */
+  top: 0;
+  left: 0;
   width: 60%;
   height: 60%;
-  background: white;
-  z-index: 2000;
-  display: flex;
-  flex-direction: column;
+  z-index: 1000;
+  background: #1e293b;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
+
 
 .notes-header {
   padding: 1rem;

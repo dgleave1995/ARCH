@@ -9,7 +9,7 @@
         { name: 'Notes', url: '/notes' },
       ]"
     />
-    <router-view /> 
+    <router-view class="main-content" /> 
   </div>
 </template>
 

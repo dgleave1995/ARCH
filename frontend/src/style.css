@@ -56,13 +56,15 @@ button:focus-visible {
 .card {
   padding: 2em;
 }
-
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 100vw;
   padding: 2rem;
-  text-align: center;
+  text-align: left;        /* align all text to left */
+  display: block;          /* default, safe */
 }
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
