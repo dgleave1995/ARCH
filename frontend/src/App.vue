@@ -1,4 +1,5 @@
 <template>
+  <a href="http://localhost:5000/auth/login">Login with X</a>
   <div style="height: 100%;">
     <SideBar
       class="app-layout"
