@@ -11,6 +11,11 @@ export default {
             headingText: "My Notes",
           },
         },
+        {
+          component: "Notes",
+          props: {
+          },
+        },
       ],
     },
   ],
